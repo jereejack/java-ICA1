@@ -33,4 +33,8 @@ public class SimulationEvent {
     public void setDetails(String details) {
         this.details = details;
     }
+
+    public void execute(){
+        System.out.println("Executing event " + details);
+    }
 }

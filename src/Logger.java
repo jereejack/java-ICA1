@@ -21,13 +21,10 @@ public class Logger {
     public void logErrorMessage(String message){
     }
 
-    public void setLogLevel(LogLevel logLevel){
-    }
 
     public String logFormatting(String message){
         return message;
     }
 
-    public void registerObserver(Observer observer){
-    }
+
 }

@@ -10,7 +10,7 @@ public class SimulationManager {
     public SimulationManager() {
     }
 
-    public void runSimulation(File simulationTopology, EnvironmentalEffectsStrategy environmentalEffectStrategy, TrafficDelayStrategy trafficDelayStrategy){
+    public void runSimulation(File simulationTopology, EnvironmentalEffectStrategy environmentalEffectStrategy, TrafficDelayStrategy trafficDelayStrategy){
         simulationCoreConcrete = new SimulationCoreConcrete(simulationTopology, environmentalEffectStrategy, trafficDelayStrategy);
         simulationCoreConcrete.initialize();
     }

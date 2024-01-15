@@ -4,13 +4,13 @@ public class SimulationCoreConcrete implements SimulationCore{
 
     private Logger logger;
 
-    private EnvironmentalEffectsStrategy environmentalEffectsStrategy;
+    private EnvironmentalEffectStrategy environmentalEffectsStrategy;
     private TrafficDelayStrategy trafficDelayStrategy;
 
     private File topology;
 
 
-    public SimulationCoreConcrete(File topology, EnvironmentalEffectsStrategy environmentalEffectStrategy, TrafficDelayStrategy trafficDelayStrategy) {
+    public SimulationCoreConcrete(File topology, EnvironmentalEffectStrategy environmentalEffectStrategy, TrafficDelayStrategy trafficDelayStrategy) {
         this.topology = topology;
         this.environmentalEffectsStrategy = environmentalEffectStrategy;
         this.trafficDelayStrategy = trafficDelayStrategy;
@@ -50,7 +50,7 @@ public class SimulationCoreConcrete implements SimulationCore{
     }
 
     @Override
-    public void setEnvironmentalEffectsStrategy(EnvironmentalEffectsStrategy environmentalEffectsStrategy) {
+    public void setEnvironmentalEffectsStrategy(EnvironmentalEffectStrategy environmentalEffectsStrategy) {
         this.environmentalEffectsStrategy = environmentalEffectsStrategy;
     }
 
@@ -68,7 +68,7 @@ public class SimulationCoreConcrete implements SimulationCore{
         this.logger = logger;
     }
 
-    public EnvironmentalEffectsStrategy getEnvironmentalEffectsStrategy() {
+    public EnvironmentalEffectStrategy getEnvironmentalEffectsStrategy() {
         return environmentalEffectsStrategy;
     }
 

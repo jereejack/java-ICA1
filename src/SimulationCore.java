@@ -5,7 +5,7 @@ public interface SimulationCore {
     void registerLogger(Logger logger);
     void start();
     void stop();
-    void setEnvironmentalEffectsStrategy(EnvironmentalEffectsStrategy environmentalEffectsStrategy);
+    void setEnvironmentalEffectsStrategy(EnvironmentalEffectStrategy environmentalEffectsStrategy);
     void setTrafficDelayStrategy(TrafficDelayStrategy trafficDelayStrategy);
 
 }
